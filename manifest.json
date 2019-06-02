@@ -1,0 +1,29 @@
+{
+    "short_name": "VEXA",
+    "name": "VEXA",
+    "description": "vexa is a simple javascript web app, which uses browser's speechRecognition API to give transcript.",
+    "icons": [{
+            "src": "icons/vexa-32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "icons/vexa-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+
+        {
+            "src": "icons/vexa-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+
+    ],
+
+    "start_url": "/index.html",
+    "background_color": "white",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#0B7FDB"
+}

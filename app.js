@@ -2,13 +2,25 @@ const talkBtn = document.querySelector("#talk");
 
 const content = document.querySelector("#content");
 
+const speakerCheckbox = document.querySelector("#speakerCheckbox");
+
+let soundOutput = true;
+
+speakerCheckbox.addEventListener("change", function() {
+  if (this.checked) {
+    soundOutput = true;
+  } else {
+    soundOutput = false;
+  }
+});
+
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 //   ##
 const recognition = new SpeechRecognition();
 
 recognition.onstart = () => {
-  console.log("Voice is activated");
+  // console.log("Voice is activated");
   talkBtn.style.backgroundColor = "#f44336";
   talkBtn.style.color = "white";
 };
@@ -22,7 +34,9 @@ recognition.onresult = event => {
   const current = event.resultIndex;
   const transcript = event.results[current][0].transcript;
   content.textContent = "You Said : " + transcript;
-  readOutLoud(transcript);
+  if (soundOutput) {
+    readOutLoud(transcript);
+  }
 };
 
 //

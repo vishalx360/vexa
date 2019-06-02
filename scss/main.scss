@@ -17,6 +17,7 @@ body {
 
 }
 
+
 main {
     display: flex;
     flex-direction: column;
@@ -50,6 +51,28 @@ article {
 
 #container {
     display: contents;
+
+
+
+}
+
+.checkbox {
+    font-family: "imperfectregular", Courier New, Courier, monospace;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+
+    label {
+        font-size: 1rem;
+
+        input {
+            margin: 2px;
+        }
+    }
+
+
 }
 
 footer {
