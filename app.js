@@ -37,7 +37,7 @@ recognition.onresult = event => {
   const transcript = event.results[current][0].transcript;
   content.textContent = "You Said : " + transcript;
   if (soundOutput) {
-    readOutLoud(transcript);
+    readOutLoud("You Said : " + transcript);
   }
 };
 
