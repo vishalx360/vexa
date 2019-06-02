@@ -23,11 +23,13 @@ recognition.onstart = () => {
   // console.log("Voice is activated");
   talkBtn.style.backgroundColor = "#f44336";
   talkBtn.style.color = "white";
+  talkBtn.textContent = "LISTINING..";
 };
 
 recognition.onend = () => {
   talkBtn.style.backgroundColor = "white";
   talkBtn.style.color = "black";
+  talkBtn.textContent = "START";
 };
 
 recognition.onresult = event => {

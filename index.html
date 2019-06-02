@@ -8,27 +8,35 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="icons/vexa-32.png" type="image/x-icon">
+
+    <!-- og tags -->
+    <meta property="og:image" content="https://vexa.netlify.com/poster.jpg">
+    <meta name="theme-color" content="#0B7FDB" />
+    <meta property="og:description"
+        content="vexa is a simple javascript web app, which uses browser's speechRecognition API to give transcript and speechSynthesis API to output transcript as sound.">
     <title>VEXA</title>
 </head>
 
 <body>
     <main>
         <div>
-            <img id="micImg" src="icons/mic.png" alt="">
+            <img id="micImg" src="icons/vexa-192.png" alt="">
         </div>
         <div id="container">
-            <button id="talk">SPEAK</button>
-            <article>
-                <p id="content">Click on speak button and Speak Something to get its transcript.</p>
-            </article>
+
+            <button id="talk">START</button>
             <div class="checkbox">
                 <label><input id="speakerCheckbox" type="checkbox" value="" checked>Speaker-Output</label>
             </div>
+            <article>
+                <p id="content">Click on START button and Speak Something to get its transcript. </p>
+            </article>
+
         </div>
 
     </main>
     <footer>
-        <h5>VEXA:v0.1.6</h5>
+        <h5>VEXA:v0.1.7</h5>
         <a href="https://github.com/vishalx360/vexa">Github</a>
 
 

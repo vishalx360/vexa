@@ -14,20 +14,23 @@ html {
 
 body {
     background: linear-gradient(55deg, #a54184f3, #0b7fdb);
+    background: black;
 
 }
 
 
 main {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
 }
 
 #micImg {
-    width: 20vh;
+    width: auto;
     height: auto;
     margin-bottom: 20px
 }
@@ -51,9 +54,6 @@ article {
 
 #container {
     display: contents;
-
-
-
 }
 
 .checkbox {
@@ -63,6 +63,7 @@ article {
     border-radius: 20px;
     color: white;
     padding: 10px;
+    margin: 10px;
 
     label {
         font-size: 1rem;
@@ -78,7 +79,7 @@ article {
 footer {
     position: fixed;
     bottom: 0;
-    background: #ffffff7a;
+    background: #ffffffb9;
     padding: 5px 10px;
     border-radius: 0 20px 0 0;
     font-family: monospace;
