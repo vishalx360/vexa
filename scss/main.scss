@@ -14,7 +14,7 @@ html {
 
 body {
     background: linear-gradient(55deg, #a54184f3, #0b7fdb);
-    background: black;
+    background: #121212;
 
 }
 
@@ -37,8 +37,9 @@ main {
 
 article {
     font-family: "imperfectregular", Courier New, Courier, monospace;
-    background: transparent;
+    background: #1D1D1D;
     border: 2px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     color: white;
     min-width: 20vw;
