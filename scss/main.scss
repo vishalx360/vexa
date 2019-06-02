@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import"_imperfect-font";
+@import"_btn";
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(55deg, #a54184f3, #0b7fdb);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#micImg {
+    width: 20vh;
+    height: auto;
+    margin-bottom: 20px
+}
+
+article {
+    font-family: "imperfectregular", Courier New, Courier, monospace;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    min-width: 20vw;
+    max-width: 80vw;
+    margin: 5vmin 0px;
+
+    p {
+        font-size: 1.5rem;
+        padding: 3vmin;
+    }
+
+}
+
+#container {
+    display: contents;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background: #ffffff7a;
+    padding: 5px 10px;
+    border-radius: 0 20px 0 0;
+    font-family: monospace;
+
+    a {
+
+        color: black
+    }
+
+}
